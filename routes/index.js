@@ -12,12 +12,12 @@ const comition6Router = require('./Comition6')
 const comition7Router = require('./Comition7')
 const forumRouter = require('./Forum')
 const InscriptionsRouter = require('./Inscriptions')
-const UserRouter = require('./users')
+const UserRouter = require('./Users')
 const SeminarsRouter = require ('./Seminars')
 const PublicityRouter = require('./Publicity')
 const ClassRoomPicturesRouter = require('./Classroompictures')
 const TeachersRouter = require('./Teachers')
-const homeTeachersRouter = require('./homeTeachers')
+const homeTeachersRouter = require('./HomeTeachers')
 
 
 
