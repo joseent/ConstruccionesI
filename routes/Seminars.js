@@ -49,7 +49,7 @@ router.get("/:id", async(req, res) => {
   });
 
   const NewSeminar = async (req, res) => {
-    const urlImage = 'http://localhost:3000/images/' + req.file.filename
+    const urlImage = 'https://construcciones1backend.herokuapp.com/images/' + req.file.filename
     const seminarioNuevo = new SeminarModel({
       _id: new ObjectID(),
       title: req.body.title,
