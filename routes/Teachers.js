@@ -144,4 +144,14 @@ router.put("/:id", async (req, res) => {
   }
 });
 
+router.delete("/:id", async(req, res) => {
+  const id = req.params.id;
+  try {
+    const respuesta =  await TeachersModel.findByIdAndDelete(id);
+    res.json({ mensaje: "usuario borrado", usuario: respuesta });
+  } catch (error) {
+    res.status(500).json({ mensaje: "error", tipo: error });
+  }
+});
+
 module.exports = router;
